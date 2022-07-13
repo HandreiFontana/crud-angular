@@ -14,7 +14,7 @@ import { ErrorDialogComponent } from './../../shared/components/error-dialog/err
 export class CoursesComponent implements OnInit {
 
   courses$: Observable<Course[]>
-  displayedColumns = ['name', 'category']
+  displayedColumns = ['name', 'category', 'actions']
 
   constructor(
     private coursesService: CoursesService,

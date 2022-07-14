@@ -1,4 +1,11 @@
 <mat-toolbar color="primary" *ngIf="authService.isLoggedIn$ | async">
+  <button mat-icon-button class="example-icon" aria-label="Menu icon button">
+    <mat-icon>menu</mat-icon>
+  </button>
   <span>CRUD Angular</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon" aria-label="Logout icon button" (click)="signOut()">
+    <mat-icon>logout</mat-icon>
+  </button>
 </mat-toolbar>
 <router-outlet></router-outlet>

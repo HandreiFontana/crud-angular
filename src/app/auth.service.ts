@@ -25,4 +25,10 @@ export class AuthService {
       })
     )
   }
+
+  logout() {
+    localStorage.removeItem('@clickmvp:user')
+    localStorage.removeItem('@clickmvp:token')
+    return this._isLoggedIn$.next(false)
+  }
 }

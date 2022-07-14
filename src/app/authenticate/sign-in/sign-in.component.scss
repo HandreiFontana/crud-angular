@@ -1,0 +1,29 @@
+.centralize {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+mat-card {
+  max-width: 400px;
+  padding: 0;
+  text-align: center;
+}
+
+.form-margin {
+  margin: 20px 30px;
+}
+
+.full-width{
+  width: 100%;
+}
+
+.min-width {
+  width: 100%;
+  min-width: 150px;
+}
+
+.icons {
+  margin-right: 10px;
+}
